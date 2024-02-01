@@ -27,7 +27,7 @@ router.get("/", async (req, res) => {
     query = query.gte("publishDate", req.query.publishedAfter);
   }
   try {
-    const books = await Book.find({});
+    const books = await query.exec();
     res.render("books/index", {
       books,
       searchOptions: req.query,
