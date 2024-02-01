@@ -1,6 +1,6 @@
 const express = require("express");
-const router = express.Router();
 const Author = require("../models/author");
+const router = express.Router();
 
 //All authors
 router.get("/", async (req, res) => {
