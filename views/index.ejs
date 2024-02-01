@@ -1,1 +1,4 @@
-Default layout
+<h2>Recently added</h2>
+<% books.forEach(book => { %>
+<p><%= book.title %></p>
+<img height="150" width="100" src="<%= book.coverImagePath %>" /> <% }) %>
