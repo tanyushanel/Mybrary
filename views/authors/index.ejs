@@ -7,5 +7,11 @@
 </form>
 <br />
 <% authors.forEach(author => { %>
-<p><%= author.name %></p>
+<div>
+  <span><%= author.name %></span>
+  <a href="/authors/<%= author.id %>">View</a>
+  <a href="/authors/<%= author.id %>/edit">Edit</a>
+  <a href="/authors/<%= author.id %>">Delete</a>
+</div>
+
 <% }) %>
